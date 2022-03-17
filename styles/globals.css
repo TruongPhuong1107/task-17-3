@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -16,4 +20,28 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-200;
+  }
+}
+
+@layer components {
+  .behind-image {
+    @apply w-2/4 ml-12 mt-32 h-72 bg-red-300 z-10 absolute;
+  }
+  .image {
+    @apply absolute mt-16 ml-26 z-20 contrast-125;
+  }
+  .banner {
+    @apply w-860 h-850 bg-white float-right mt-16 mr-12 z-30 flex flex-col justify-center;
+  }
+  .items-banner {
+    @apply mx-auto;
+  }
+  .buy-now {
+    @apply bg-indigo-600 px-10 py-2 rounded-3xl text-white hover:outline-indigo-400 hover:bg-indigo-700;
+  }
 }
