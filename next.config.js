@@ -5,7 +5,4 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  images: {
-    domains: ["images01.nicepage.com"],
-  },
 };
