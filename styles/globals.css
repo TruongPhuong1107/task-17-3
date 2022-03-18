@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,8 +12,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -33,10 +34,10 @@ a {
     @apply w-2/4 ml-12 mt-32 h-72 bg-red-300 z-10 absolute;
   }
   .image {
-    @apply absolute mt-16 ml-26 z-20 contrast-125;
+    @apply absolute mt-16 z-20 contrast-125;
   }
   .banner {
-    @apply w-860 h-850 bg-white float-right mt-16 mr-12 z-30 flex flex-col justify-center;
+    @apply bg-white float-right mt-16 mr-12 z-30 flex flex-col justify-center;
   }
   .items-banner {
     @apply mx-auto;
