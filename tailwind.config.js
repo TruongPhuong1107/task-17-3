@@ -63,6 +63,9 @@ module.exports = {
       fontSize: {
         xxs: [".75rem", { lineHeight: "16px" }],
       },
+      screens: {
+        phone: "360px",
+      },
     },
   },
   plugins: [require("tailwindcss-children")],
