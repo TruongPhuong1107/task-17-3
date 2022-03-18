@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -30,19 +30,22 @@ a {
 }
 
 @layer components {
-  .behind-image {
-    @apply w-2/4 ml-12 mt-32 h-72 bg-red-300 z-10 absolute;
+  .beside-image {
+    @apply xl:w-1/20 xl:mt-36 xl:h-72 bg-red-300 z-10 lg:h-48 lg:w-16 lg:mt-60 md:h-28 md:w-12 md:mt-96 sm:h-28 sm:w-8 sm:mt-80;
+  }
+  .beside-banner {
+    @apply xl:w-1/40 xl:mt-36 xl:h-72 bg-red-300 z-10 lg:mt-60 lg:w-10 lg:h-48 md:h-28 md:w-8 md:mt-96 sm:h-28 sm:w-5 sm:mt-80;
   }
   .image {
-    @apply absolute mt-16 z-20 contrast-125;
+    @apply xl:mt-56 z-20 xl:h-500 contrast-125 xl:w-1/4 lg:w-96 lg:mt-48 lg:h-96 md:w-80 md:mt-80 md:h-80 sm:w-72 sm:mt-72 sm:h-72;
   }
   .banner {
-    @apply bg-white float-right mt-16 mr-12 z-30 flex flex-col justify-center;
+    @apply xl:w-1/4 xl:h-500 bg-white xl:mt-56 z-20 flex flex-col justify-center float-right flex-wrap lg:w-96 lg:mt-48 lg:h-96 md:w-80 md:mt-80 md:h-80 sm:w-72 sm:mt-72 sm:h-72;
   }
   .items-banner {
     @apply mx-auto;
   }
   .buy-now {
-    @apply bg-indigo-600 px-10 py-2 rounded-3xl text-white hover:outline-indigo-400 hover:bg-indigo-700;
+    @apply bg-indigo-600 xl:px-10 xl:py-3 xl:mb-5 rounded-3xl text-white hover:outline-indigo-400 hover:bg-indigo-700 lg:text-sm lg:px-4 lg:py-2 tracking-more md:text-sm md:px-4 md:py-2 sm:text-xs sm:px-4 sm:py-2 sm:mt-6;
   }
 }
