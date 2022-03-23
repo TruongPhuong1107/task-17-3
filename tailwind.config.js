@@ -1,11 +1,11 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      se: "375px",
+      mid: "1300px",
+    },
     extend: {
-      screens: {
-        se: "375px",
-        mid: "1300px",
-      },
       colors: {
         variants: {
           display: [
@@ -46,10 +46,12 @@ module.exports = {
       zIndex: {
         1: "1",
       },
+      flexBasis: {
+        "1/7": "14.2857143%",
+        "5/7": "71.4285714%",
+      },
       width: {
-        "1/20": "5%",
-        "1/40": "2.5%",
-        "7/20": "35%",
+        100: "25rem",
       },
       height: {
         500: "500px",
