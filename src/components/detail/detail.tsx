@@ -7,7 +7,7 @@ export interface Props {
 
 export const Detail = (props: Props): React.ReactElement => (
   <div className="flex justify-center  phone:items-center flex-row">
-    <div className="beside-image"></div>
+    <div className="beside-image">srhsehr</div>
     <img
       className="image"
       src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/30c99846a354513681afe44b/gfgf-min.jpg"
